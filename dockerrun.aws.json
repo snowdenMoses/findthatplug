@@ -1,0 +1,21 @@
+{
+    "AWSEBDockerrunVersion": "3",
+    "containerDefinitions": [
+        {
+            "name": "frontend",
+            "image": ":snowdenmoses/frontend",
+            "memory": 128
+        },
+        {
+            "name": "api",
+            "image": ":snowdenmoses/api",
+            "essential": true,
+            "memory": 128
+        },
+        {
+            "name": "nginx",
+            "image": ":snowdenmoses/nginx",
+            "memory": 128
+        }
+    ]
+}

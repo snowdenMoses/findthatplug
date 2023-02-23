@@ -4,13 +4,22 @@
         {
             "name": "frontend",
             "image": ":snowdenmoses/frontend",
-            "memory": 128
+            "memory": 128,
+            "host": "frontend"
         },
         {
             "name": "api",
             "image": ":snowdenmoses/api",
             "essential": true,
-            "memory": 128
+            "memory": 128,
+            "host": "api"
+        },
+        {
+            "name": "api",
+            "image": ":snowdenmoses/api",
+            "essential": true,
+            "memory": 128,
+            "host": "api"
         },
         {
             "name": "nginx",

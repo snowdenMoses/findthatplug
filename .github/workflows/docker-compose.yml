@@ -18,6 +18,6 @@ jobs:
 
       - name: Build and push Docker images
         run: |
-          docker-compose build
           docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-          docker-compose push --ignore-push-failures
+          docker-compose build
+          docker-compose push

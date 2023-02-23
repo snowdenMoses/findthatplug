@@ -8,3 +8,4 @@ Todo
 7. Add github CI/CD
 8. Work on add product to cart (using redux and thunk)
 9. Reduce image size before upload (Rails)
+10> .....and others

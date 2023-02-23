@@ -15,7 +15,7 @@ RUN apk add --update --no-cache build-base postgresql-dev nodejs tzdata \
 
 # Copy the rest of the application code to the container
 COPY . .
-COPY --chmod=0755 *.sh /bin/
+# COPY --chmod=0755 *.sh /bin/
 # ENTRYPOINT ["./bin/docker-entry.sh"]
 # ENTRYPOINT ["/bin/bash", "docker-entrypoint.sh"]
 ENTRYPOINT ["bin/docker-entrypoint.sh"]

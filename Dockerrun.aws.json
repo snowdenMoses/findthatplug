@@ -30,14 +30,11 @@
             "host": "nginx",
             "portMappings": [
                 {
-                    "hostPort": 80,
+                    "hostPort":80,
                     "containerPort": 80
                 }
             ],
-            "links": [
-                "frontend",
-                "api"
-            ]
+            "links":["frontend","api"]
         }
     ]
 }

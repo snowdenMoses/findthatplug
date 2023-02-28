@@ -1,5 +1,10 @@
 {
     "AWSEBDockerrunVersion": "3",
+    "portMappings": [
+        {
+            "containerPort": 80
+        }
+    ],
     "containerDefinitions": [
         {
             "name": "frontend",
@@ -20,22 +25,39 @@
             "image": "snowdenmoses/db",
             "essential": false,
             "memory": 128,
-            "host": "db"
-        },
-        {
-            "name": "nginx",
-            "image": "snowdenmoses/nginx",
-            "essential": true,
-            "host": "nginx",
-            "portMappings": [
+            "host": "db",
+            "PortMappings": [
                 {
-                    "hostPort": 80,
-                    "containerPort": 80
+                    "ContainerPort": 5432,
+                    "HostPort": 5432
                 }
             ],
-            "links": [
+            "Volumes": [
+                {
+                    "HostDirectory": "./pg-data",
+                    "ContainerDirectory": "/var/lib/postgresql/data"
+                }
+            ]
+        }, 
+        {
+            "Name": "nginx",
+            "Image": "snowdenmoses/nginx",
+            "Memory": 128,
+            "Essential": true,
+            "PortMappings": [
+                {
+                    "ContainerPort": 80,
+                    "HostPort": 80
+                }
+            ],
+            "Links": [
                 "frontend",
                 "api"
+            ],
+            "Command": [
+                "nginx",
+                "-g",
+                "daemon off;"
             ]
         }
     ]

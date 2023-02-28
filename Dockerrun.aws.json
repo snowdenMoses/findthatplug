@@ -16,6 +16,13 @@
             "host": "api"
         },
         {
+            "name": "db",
+            "image": "snowdenmoses/db",
+            "essential": false,
+            "memory": 128,
+            "host": "db"
+        },
+        {
             "name": "nginx",
             "image": "snowdenmoses/nginx",
             "memory": 128,

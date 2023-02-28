@@ -25,7 +25,6 @@
         {
             "name": "nginx",
             "image": "snowdenmoses/nginx",
-            "memory": 128,
             "essential": true,
             "host": "nginx",
             "portMappings": [

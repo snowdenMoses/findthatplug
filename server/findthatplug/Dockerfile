@@ -18,7 +18,7 @@ COPY . .
 # COPY --chmod=0755 *.sh /bin/
 # ENTRYPOINT ["./bin/docker-entry.sh"]
 # ENTRYPOINT ["/bin/bash", "docker-entrypoint.sh"]
-ENTRYPOINT ["bin/docker-entrypoint.sh"]
+# ENTRYPOINT ["bin/docker-entrypoint.sh"]
 # Set the command to run the rails server
 CMD ["bundle", "exec", "rails", "server"]
 # EXPOSE 80

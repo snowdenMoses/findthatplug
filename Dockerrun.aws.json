@@ -1,6 +1,6 @@
 {
     "AWSEBDockerrunVersion": "3",
-    "portMappings": [
+    "ports": [
         {
             "containerPort": 80
         }
@@ -53,11 +53,6 @@
             "Links": [
                 "frontend",
                 "api"
-            ],
-            "Command": [
-                "nginx",
-                "-g",
-                "daemon off;"
             ]
         }
     ]

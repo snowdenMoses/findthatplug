@@ -9,7 +9,7 @@
         {
             "name": "frontend",
             "image": "snowdenmoses/frontend",
-            "memory": 128,
+            "memory": 512,
             "essential": false,
             "host": "frontend"
         },
@@ -17,14 +17,14 @@
             "name": "api",
             "image": "snowdenmoses/api",
             "essential": false,
-            "memory": 128,
+            "memory": 512,
             "host": "api"
         },
         {
             "name": "db",
             "image": "snowdenmoses/db",
             "essential": false,
-            "memory": 128,
+            "memory": 512,
             "host": "db",
             "PortMappings": [
                 {
@@ -42,7 +42,7 @@
         {
             "Name": "nginx",
             "Image": "snowdenmoses/nginx",
-            "Memory": 128,
+            "Memory": 512,
             "Essential": true,
             "PortMappings": [
                 {

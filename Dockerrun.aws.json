@@ -52,7 +52,7 @@
             ],
             "Links": [
                 "frontend",
-                "api"
+                "api", "db"
             ]
         }
     ]

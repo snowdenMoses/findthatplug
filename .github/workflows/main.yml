@@ -1,4 +1,4 @@
-name: Deploy react app to AWS Elasticstalk_v2
+name: Deploy react app to AWS Elasticstalk_v3
 on:
   push:
     branches:

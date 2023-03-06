@@ -38,6 +38,22 @@
                     "ContainerDirectory": "/var/lib/postgresql/data"
                 }
             ]
+        }, 
+        {
+            "Name": "nginx",
+            "Image": "snowdenmoses/nginx",
+            "Memory": 512,
+            "Essential": true,
+            "PortMappings": [
+                {
+                    "ContainerPort": 80,
+                    "HostPort": 80
+                }
+            ],
+            "Links": [
+                "frontend",
+                "api", "db"
+            ]
         }
     ]
 }

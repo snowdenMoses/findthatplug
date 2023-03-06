@@ -9,7 +9,7 @@
         {
             "name": "frontend",
             "image": "snowdenmoses/frontend",
-            "memory": 512,
+            "memory": 1000,
             "essential": false,
             "host": "frontend"
         },
@@ -17,14 +17,14 @@
             "name": "api",
             "image": "snowdenmoses/api",
             "essential": false,
-            "memory": 512,
+            "memory": 1000,
             "host": "api"
         },
         {
             "name": "db",
             "image": "snowdenmoses/db",
             "essential": false,
-            "memory": 512,
+            "memory": 1000,
             "host": "db",
             "PortMappings": [
                 {

@@ -11,14 +11,26 @@
             "image": "snowdenmoses/frontend",
             "memory": 1000,
             "essential": false,
-            "host": "frontend"
+            "host": "frontend",
+            "portMappings": [
+                {
+                    "hostPort": 3000,
+                    "containerPort": 3000
+                }
+            ]
         },
         {
             "name": "api",
             "image": "snowdenmoses/api",
             "essential": false,
             "memory": 1000,
-            "host": "api"
+            "host": "api",
+            "portMappings": [
+                {
+                    "hostPort": 3000,
+                    "containerPort": 3000
+                }
+            ]
         },
         {
             "name": "db",

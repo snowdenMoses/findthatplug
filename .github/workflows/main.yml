@@ -30,9 +30,9 @@ jobs:
         use_existing_version_if_available: true
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: findthatplug_production_v5
-        environment_name: Findthatplugproductionv5-env
-        version_label: "findthatplug_production_v5-${{ steps.format-time.outputs.replaced }}"
+        application_name: findthatplug
+        environment_name: Findthatplug-env
+        version_label: "findthatplug_v7-${{ steps.format-time.outputs.replaced }}"
         region: us-east-1
         deployment_package: deploy.zip
 

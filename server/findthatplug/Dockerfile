@@ -20,5 +20,6 @@ COPY . .
 # ENTRYPOINT ["/bin/bash", "docker-entrypoint.sh"]
 # ENTRYPOINT ["bin/docker-entrypoint.sh"]
 # Set the command to run the rails server
+EXPOSE 3000
 CMD ["bundle", "exec", "rails", "server"]
 # EXPOSE 80

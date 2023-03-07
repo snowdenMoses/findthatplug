@@ -57,4 +57,5 @@ Rails.application.configure do
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
+  config.hosts << "demoagain-env-1.eba-prwvkx4v.us-east-1.elasticbeanstalk.com"
 end

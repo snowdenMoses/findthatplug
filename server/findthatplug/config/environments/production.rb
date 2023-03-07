@@ -83,4 +83,5 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.hosts << "demoagain-env-1.eba-prwvkx4v.us-east-1.elasticbeanstalk.com"
 end

@@ -4,8 +4,8 @@ services:
         build:
           context: ./db
         environment:
-          POSTGRES_PASSWORD: example
-          POSTGRES_USERNAME: snowdenmoses
+          POSTGRES_PASSWORD: POSTGRES_PASSWORD
+          POSTGRES_USERNAME: POSTGRES_USERNAME
           POSTGRES_DB: POSTGRES_DB
         restart: always
         ports:

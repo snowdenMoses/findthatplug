@@ -12,6 +12,7 @@ const LandingPage = () => (
                 extra={extra}
             />
     </div> */}
+    <h5>Welcome Page</h5>
     </>
 )
 export default LandingPage

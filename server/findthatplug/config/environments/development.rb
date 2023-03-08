@@ -66,6 +66,7 @@ Rails.application.configure do
   IPAddr.new("0.0.0.0/0"),        # All IPv4 addresses.
   IPAddr.new("::/0"),             # All IPv6 addresses.
   "localhost",                    # The localhost reserved domain.
+  ENV["RAILS_DEVELOPMENT_HOSTS"]
 ]
   config.hosts << "demoagain-env-1.eba-prwvkx4v.us-east-1.elasticbeanstalk.com/"
 end

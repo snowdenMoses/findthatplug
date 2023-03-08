@@ -1,0 +1,40 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "ports": [
+        {
+            "containerPort": 80
+        }
+    ],
+    "containerDefinitions": [
+        {
+            "name": "frontend",
+            "image": "snowdenmoses/frontend",
+            "memory": 512,
+            "essential": false,
+            "host": "frontend"
+        },
+        {
+            "name": "api",
+            "image": "snowdenmoses/api",
+            "essential": false,
+            "memory": 512,
+            "host": "api"
+        },
+        {
+            "Name": "nginx",
+            "Image": "snowdenmoses/nginx",
+            "Memory": 128,
+            "Essential": true,
+            "PortMappings": [
+                {
+                    "ContainerPort": 80,
+                    "HostPort": 80
+                }
+            ],
+            "Links": [
+                "frontend",
+                "api"
+            ]
+        }
+    ]
+}

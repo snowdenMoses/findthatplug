@@ -5,13 +5,13 @@ services:
           context: ./db
         environment:
           POSTGRES_PASSWORD: example
-          POSTGRES_USERNAME: snowdenmoses
+          POSTGRES_USERNAME: postgres
           POSTGRES_DATABASE: findthatplug
         restart: always
         ports:
           - "5432:5432"
         volumes:
-          - pg-datafolderv1:/var/lib/postgresql/data
+          - pg-datafolderv2:/var/lib/postgresql/data
     frontend:
         build:
           context: ./frontend
@@ -39,5 +39,5 @@ services:
           - api
           - frontend
 volumes:
-    pg-datafolderv1:
+    pg-datafolderv2:
     

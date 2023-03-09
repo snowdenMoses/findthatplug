@@ -23,7 +23,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   port: 5432
   database: findthatplug
-  username: snowdenmoses
+  username: postgres
   password: example
 
 development:

@@ -4,14 +4,14 @@ services:
         build:
           context: ./db
         environment:
-          POSTGRES_PASSWORD: POSTGRES_PASSWORD
-          POSTGRES_USERNAME: POSTGRES_USERNAME
-          POSTGRES_DATABASE: POSTGRES_DATABASE
+          POSTGRES_PASSWORD: example
+          POSTGRES_USERNAME: snowdenmoses
+          POSTGRES_DATABASE: findthatplug
         restart: always
         ports:
           - "5432:5432"
         volumes:
-          - pg-datafolder:/var/lib/postgresql/data
+          - pg-datafolderv1:/var/lib/postgresql/data
     frontend:
         build:
           context: ./frontend
@@ -39,5 +39,5 @@ services:
           - api
           - frontend
 volumes:
-    pg-datafolder:
+    pg-datafolderv1:
     

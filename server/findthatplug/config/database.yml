@@ -17,7 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: <%= ENV["POSTGRES_HOST"] %>
+  host: http://findthatplugproductionversion-env.eba-j2seh8n6.us-east-1.elasticbeanstalk.com/
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>

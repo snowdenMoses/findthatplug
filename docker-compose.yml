@@ -39,5 +39,5 @@ services:
           - api
           - frontend
 volumes:
-    - pg-datafolder:
+    pg-datafolder:
     

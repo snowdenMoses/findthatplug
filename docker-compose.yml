@@ -1,7 +1,8 @@
 version: "3"
 services:
     db:
-        build: postgres:15.2-alpine
+        build:
+          context: ./db
         environment:
           POSTGRES_PASSWORD: POSTGRES_PASSWORD
           POSTGRES_USERNAME: POSTGRES_USERNAME

@@ -1,4 +1,4 @@
-name: Deploy react app to AWS Elasticstalk_v2
+name: Deploy react app to AWS Elasticstalk
 on:
   push:
     branches:
@@ -27,12 +27,11 @@ jobs:
     - name: Deploy to EB
       uses: einaregilsson/beanstalk-deploy@v21
       with:
-        use_existing_version_if_available: true
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: findthatplug_production_version
         environment_name: Findthatplugproductionversion-env
-        version_label: "bucket2-${{ steps.format-time.outputs.replaced }}"
+        version_label: "bucket3-${{ steps.format-time.outputs.replaced }}"
         region: us-east-1
         deployment_package: deploy.zip
 

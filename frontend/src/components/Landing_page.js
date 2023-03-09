@@ -12,7 +12,7 @@ const LandingPage = () => (
                 extra={extra}
             />
     </div> */}
-    <h5>Welcome Page_v10</h5>
+    <h5>WELCOME Page_v11</h5>
     </>
 )
 export default LandingPage

@@ -33,5 +33,5 @@ jobs:
         environment_name: Findthatplugproductionversion-env
         version_label: "bucket_version3-${{ steps.format-time.outputs.replaced }}"
         region: us-east-1
-        deployment_package: deploy.zip
+        # deployment_package: deploy.zip
 

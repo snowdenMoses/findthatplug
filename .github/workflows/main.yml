@@ -13,7 +13,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Generate deployment package
-      run: zip -r app-$(date +%Y-%m-%d-%H-%M-%S).zip . -x '**node_modules**'
+      run: zip -r app-$(date +%Y-%m-%d-%H-%M-%S).zip *
       
     - name: Run string replace
       uses: frabert/replace-string-action@v2.0
